@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>my cv</title>
+        <link rel="stylesheet" href="myStyle.css">
+    </head>
+<body>
+
+</head>
+<body style="font-family:Verdana;">
+
+<center>'
+    <div style="background-color:#f1f1f1;padding:15px;">
+        <h1>My CV</h1>
+        <h3>it is my CV</h3>
+      </div>
+</center>
+
+<div class="topnav">
+    <a href = "#tw">about me</a>
+    <a href = "#japan">family</a>
+</div>
+
+
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">
+    		<h2>about me</h2>
+		<table>
+			<tr>
+			    <th>名字</th>
+				<td>leming</td>
+			</tr>
+
+			<tr>
+				<th>年齡</th>
+				<td>19(2001)</td>
+			</tr>
+			<tr>
+			    <th>系所</th>
+				<td>資訊管理系</td>
+			</tr>
+			<tr>
+				<th>簡介</th>
+				<td>耶比!</td>
+			</tr>
+		</table>
+    </div>
+ </div>
+
+  <div class="main">
+    <h2>My family</h2>
+    <p>it is my family</p>
+    <img src = "images/myfamily.jpg" style = "height: 100%; width: 100%;" alt = "myfamily" class = "family">
+
+    <ul class = "text" style = "float: center;">
+        <li>dad</li>
+        <li>mom</li>
+        <li>brother</li>
+        <li>sister</li>
+        <li>me</li>
+      </ul>  
+  </div>
+
+
+  <div class="right">
+    <h2>Hsiao</h2>
+    <p>姓氏</p>
+    <h2>Where?</h2>
+    <p>高雄</p>
+    <h2>Talk to me</h2>
+    <label for="talk">hello!</label>
+    <input id="talk" name="talk"> <!--限制輸入為大於0數字且必填-->
+    <button type="button" onclick="answer()" required>send</button>
+  </div>
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> my final test</div>
+
+<footer>
+    <div class="topButton"><a href="#top"><img src= "images/topButton.png" alt="topButton"></a></div>
+</footer>
+
+           
+<script type="text/javascript">
+function answer(){
+    var talkObj = document.getElementById("talk");
+
+    /*輸入錯誤偵測*/
+    if (!talkObj.checkValidity()) {
+      alert("你好像沒有打東西喔QQ");
+      return false;
+    }
+    alert("謝謝你~~");
+  }
+</script>
+
+</body>
+</html>

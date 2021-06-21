@@ -1,0 +1,126 @@
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  table {
+    width:100%;
+  }
+  table, th, td {
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right:1px;
+  }
+  
+/*特效:滑鼠放置在bar上面會變色*/
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  body {
+      background-image: url("images/background.jpg");
+  }
+
+  .box {
+      background-color: rgb(53, 53, 53);
+  }
+
+  #myIntro {
+      text-align: center;
+  }
+
+img {
+    height: 100px; 
+    width: 100px;
+    float: right;
+  }
+
+  img.family {
+      border: 3px solid rgb(122, 153, 255);
+  }
+
+  /*特效:放到家庭照上border會變大*/
+  img.family:hover{
+    border: 10px solid rgb(122, 153, 255);
+ }
+
+  /*特效:滑鼠放置top button上會變大*/
+  img:hover {
+    height: 200px; 
+    width: 200px;
+    float: right;
+  }
+
+ .text{
+    font-size: 50px;
+    color: rgb(34, 34, 34);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  .menu {
+    float: left;
+    width: 20%;
+  }
+  .menuitem {
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .right {
+    background-color: lightblue;
+    float: left;
+    width: 20%;
+    padding: 10px 15px;
+    margin-top: 7px;
+  }
+
+  /*特效:滑鼠移到右方會變色*/
+  .right:hover{
+    background-color: rgb(60, 108, 124);
+    float: left;
+    width: 20%;
+    padding: 10px 15px;
+    margin-top: 7px;
+  }
+  
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
